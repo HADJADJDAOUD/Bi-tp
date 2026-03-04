@@ -243,34 +243,6 @@ sales, purchases = load_data()
 MONTH_ORDER = {1:'Jan',2:'Fév',3:'Mar',4:'Avr',5:'Mai',6:'Jun',
                7:'Jul',8:'Aoû',9:'Sep',10:'Oct',11:'Nov',12:'Déc'}
 
-INTRO_CARD = """
-<div class="card" style="border-color:#5b8cff44;margin-bottom:1.5rem">
-    <div style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#5b8cff;">CS - 2ème Année · Objectifs pédagogiques</div>
-    <p style="margin:.4rem 0 0;font-size:.9rem;color:#e8ecf4;">
-        Rappel modèle & schéma de données · Modélisation de schémas structurés · Construction détaillée avec mécanismes d'analyse & traitement.
-        Outils/logiciels libres au choix (ici : Streamlit, Plotly, Pandas) pour concrétiser la proposition.
-    </p>
-    <div style="margin-top:.9rem;font-weight:700;color:#5b8cff;">Partie 01 — Ventes (Tableau.01)</div>
-    <ul style="padding-left:1.2rem;margin:.4rem 0;color:#e8ecf4;font-size:.88rem;line-height:1.45;">
-        <li>Paramètres dynamiques : Produit, Catégorie, Client, Forme juridique, Type vente, Wilaya, Mois, Année.</li>
-        <li>Indicateurs suivis : Chiffre d'affaires (Montant TTC) et Quantités vendues.</li>
-        <li>Questions adressées : produits vendus après le 01/02/2025, ranking Produit × Type × Année, clients top par Wilaya/Forme, volumes Catégorie × Type × Temps, catégorie la plus rentable.</li>
-    </ul>
-    <div style="margin-top:.6rem;font-weight:700;color:#ff6b6b;">Partie 02 — Achats (Tableau.02)</div>
-    <ul style="padding-left:1.2rem;margin:.4rem 0;color:#e8ecf4;font-size:.88rem;line-height:1.45;">
-        <li>Paramètres dynamiques : Produit, Catégorie, Fournisseur, Type achat, Mois, Année.</li>
-        <li>Indicateurs suivis : Coût d'achat (Montant TTC) et Quantités achetées.</li>
-        <li>Questions adressées : produits achetés en 2024, volumes Produit × Type × Temps, fournisseurs dominants par catégorie, catégorie la plus coûteuse.</li>
-    </ul>
-    <div style="margin-top:.6rem;font-weight:700;color:#43e97b;">Partie 03 — Marges (fusion ventes + achats)</div>
-    <ul style="padding-left:1.2rem;margin:.4rem 0;color:#e8ecf4;font-size:.88rem;line-height:1.45;">
-        <li>Paramètres dynamiques : Produit, Catégorie, Wilaya, Mois, Année.</li>
-        <li>Indicateurs suivis : Marge (Prix vente − Prix achat estimé) et Taux de marge.</li>
-        <li>Analyses disponibles : marge par produit/catégorie, par Wilaya, évolution temporelle et visualisation hiérarchique.</li>
-    </ul>
-    <p style="margin-top:.6rem;font-size:.85rem;color:#a5b4fc;">Conseil client : choisissez un onglet (Ventes, Achats, Marges), puis utilisez les filtres de gauche pour explorer librement vos scénarios.</p>
-</div>
-"""
 
 
 # ─────────────────────────────────────────────
@@ -355,7 +327,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────
 st.markdown('<div class="dash-title">Business Intelligence</div>', unsafe_allow_html=True)
 st.markdown('<div class="dash-subtitle">Tableau de bord analytique · Ventes · Achats · Marges</div>', unsafe_allow_html=True)
-st.markdown(INTRO_CARD, unsafe_allow_html=True)
+
 
 # ─────────────────────────────────────────────
 #  TABS

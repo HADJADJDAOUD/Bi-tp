@@ -1,5 +1,9 @@
 # Business Intelligence Dashboard
 
+
+## the link to the perview : https://bi-tp01.streamlit.app/
+
+
 ## Quick Overview
 - Streamlit application addressing the “CS - 2ème Année” objectives: data modeling, storage, and dynamic analysis of sales, purchases, and margins.
 - Example datasets included (Tableau.01 & Tableau.02) with the option to upload custom CSV/Excel files.
